@@ -12,7 +12,7 @@ import wandb
 run = wandb.init()
 config = run.config
 config.optimizer = "adam"
-config.epochs = 50
+config.epochs = 20
 config.dropout = 10
 config.hidden_nodes = 100
 

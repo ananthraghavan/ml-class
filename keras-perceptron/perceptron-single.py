@@ -23,7 +23,8 @@ img_height = X_train.shape[2]
 # create model
 model=Sequential()
 model.add(Flatten(input_shape=(img_width,img_height)))
-model.add(Dense(1))
+model.add(Dense(1, activation = 'sigmoid'))
+model.add(Dense(1, activation = 'sigmoid'))
 model.compile(loss='mse', optimizer='adam',
                 metrics=['accuracy'])
 
